@@ -58,7 +58,9 @@ app.post('/api/product', (req, res)=>{
 
 })
 
-//Actualiza un productoId de la coleccion products
+//Actualiza un productoId de la coleccion products 
+//para que funcione primero hacer un GET para llamar al producto
+//luego pasar a PUT y modificarlos campos y send
 app.put('/api/product/:productId', (req, res)=>{
  let productId = req.params.productId
  let update = req.body
